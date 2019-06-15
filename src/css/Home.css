@@ -2,3 +2,12 @@
     margin: auto;
     max-width: 1200px;
 }
+
+#divCarregando {
+    margin-top: 100px;
+}
+
+.headerCarregando {
+    text-align: center;
+    color: #00AAFF;
+}

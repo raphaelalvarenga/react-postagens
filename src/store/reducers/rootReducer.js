@@ -1,13 +1,26 @@
 let initialState = {
+    usuarios: [],
     posts: []
 };
 
 const rootReducer = (state = initialState, action) => {
-    if (action.type === "CARREGAR_POSTS") {
-        state = {
-            ...state,
-            posts: action.posts
-        }
+    switch(action.type) {
+        case "CARREGAR_USUARIOS":
+            state = {
+                ...state,
+                usuarios: action.usuarios
+            }
+            break;
+
+        case "CARREGAR_POSTS":
+            state = {
+                ...state,
+                posts: action.posts
+            }
+            break;
+
+        default:
+            break;
     }
 
     return state;

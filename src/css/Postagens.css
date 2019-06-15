@@ -1,19 +1,41 @@
 .divPostagens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: #fff;
     border-radius: 8px;
     margin: 15px auto;
     padding: 20px 10px;
     box-shadow: 5px 5px 10px #777;
+    
+}
+
+.divFotoUsuario {
+    margin-right: 10px;
+}
+
+.imgIconeUsuario {
+    max-width: 80px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 .headerPost a {
     text-decoration: none;
     color: #00AAFF;
     display: block;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
 .headerPost a:hover {
     text-decoration: none;
     color: #0088FF;
+}
+
+hr {
+    border: 1px solid #eee;
+}
+
+.parPostTexto {
+    margin-top: 15px
 }
