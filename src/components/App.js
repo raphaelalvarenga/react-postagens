@@ -7,6 +7,7 @@ import {Provider} from "react-redux";
 import Navbar from "./Navbar";
 import Home from "./telas/Home/Home";
 import Perfil from "./telas/Perfil/Perfil";
+import Post from "./telas/Post/Post";
 
 import rootReducer from "../store/reducers/rootReducer";
 
@@ -22,6 +23,7 @@ class App extends React.Component {
                     <Navbar />
                     <Route exact path = "/" component = {Home} />
                     <Route path = "/perfil" component = {Perfil} />
+                    <Route path = "/post/:post_id" component = {Post} />
                 </BrowserRouter>
             </Provider>
         )

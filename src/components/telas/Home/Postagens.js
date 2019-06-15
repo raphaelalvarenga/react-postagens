@@ -1,19 +1,25 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import FotoUsuario from "../../../images/usuario.png"
+import {connect} from "react-redux";
 
 import "../../../css/Postagens.css";
 
 const Postagens = (props) => {
+    console.log(props);
     return(
         <div>
             {
-                props.postagens.map((post) => {
+                props.postagens.posts.map((post) => {
                     return(
                         <div key = {post.id} className = "divPostagens">
-                            
                             <div className="divFotoUsuario">
-                                <img className = "imgIconeUsuario" src={FotoUsuario} alt="foto-do-usuario"/>
+                                <div>
+                                    <img className = "imgIconeUsuario" src={FotoUsuario} alt="foto-do-usuario"/>
+                                </div>
+                                <div>
+                                    Nome do Usuário
+                                </div>
                             </div>
 
                             <div className="divInfoPost">
@@ -36,4 +42,8 @@ const Postagens = (props) => {
     )
 }
 
-export default Postagens;
+const mapStateToProps = (state) => {
+    return state;
+}
+
+export default connect(mapStateToProps)(Postagens);

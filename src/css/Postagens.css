@@ -12,6 +12,9 @@
 
 .divFotoUsuario {
     margin-right: 10px;
+    max-width: 200px;
+    text-align: center;
+    color: #00AAFF;
 }
 
 .imgIconeUsuario {

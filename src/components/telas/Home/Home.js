@@ -22,8 +22,8 @@ export class Home extends React.Component {
     }
 
     render() {
-        let postagens = this.props.todosPosts.length > 0 && this.props.todosUsuarios.length > 0 ? (
-            <Postagens postagens = {this.props.todosPosts} />
+        let postagens = this.props.api.usuarios.length > 0 && this.props.api.posts.length > 0 ? (
+            <Postagens postagens = {this.props.api} />
         ) : (
             <div id="divCarregando">
                 <h1 className = "headerCarregando">Carregando postagens...</h1>
@@ -40,8 +40,7 @@ export class Home extends React.Component {
 
 const mapStoreToProps = (state) => {
     return {
-        todosUsuarios: state.usuarios,
-        todosPosts: state.posts
+        api: state
     }
 }
 
