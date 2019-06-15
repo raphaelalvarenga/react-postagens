@@ -1,10 +1,11 @@
 import React from 'react'
 import Postagens from "./Postagens";
+import {connect} from "react-redux";
 
 export class Home extends React.Component {
 
     componentDidMount() {
-        console.log("O componente home carregou");
+        console.log(this.props);
     }
 
     render() {
@@ -16,4 +17,10 @@ export class Home extends React.Component {
     }
 }
 
-export default Home;
+const mapStoreToProps = (state) => {
+    return {
+        teste: state
+    }
+}
+
+export default connect(mapStoreToProps)(Home);
