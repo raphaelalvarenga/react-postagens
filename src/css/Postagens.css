@@ -1,0 +1,19 @@
+.divPostagens {
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 15px auto;
+    padding: 20px 10px;
+    box-shadow: 5px 5px 10px #777;
+}
+
+.headerPost a {
+    text-decoration: none;
+    color: #00AAFF;
+    display: block;
+    padding-bottom: 30px;
+}
+
+.headerPost a:hover {
+    text-decoration: none;
+    color: #0088FF;
+}

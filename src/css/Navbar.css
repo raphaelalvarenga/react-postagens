@@ -1,0 +1,32 @@
+#navNavbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#navNavbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.liNavItens {
+    display: inline;
+}
+
+.liNavItens a, #divLogout a {
+    display: block;
+    padding: 20px 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #00AAFF
+}
+
+#divLogout a {
+    color: #FF0000;
+}
+
+.liNavItens a:hover, #divLogout a:hover {
+    background-color: #eee;
+}

@@ -1,9 +1,15 @@
-const initialState = [
-    {nome: "Raphael", idade: 30, nacionalidade: "Brasileiro"},
-    {nome: "Solange", idade: 54, nacionalidade: "Brasileira"},
-];
+let initialState = {
+    posts: []
+};
 
 const rootReducer = (state = initialState, action) => {
+    if (action.type === "CARREGAR_POSTS") {
+        state = {
+            ...state,
+            posts: action.posts
+        }
+    }
+
     return state;
 }
 
