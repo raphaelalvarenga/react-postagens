@@ -6,7 +6,6 @@ import {connect} from "react-redux";
 import "../../../css/Postagens.css";
 
 const Postagens = (props) => {
-    console.log(props);
     return(
         <div>
             {
